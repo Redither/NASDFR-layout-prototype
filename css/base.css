@@ -1,0 +1,36 @@
+:root {
+    font-size: 67.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    list-style: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+header {
+    padding: 2rem 0;
+    background-color: aqua;
+    position: sticky;
+    top: 0;
+}
+
+.header_container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.header_links {
+    display: flex;
+    gap: 2rem;
+}

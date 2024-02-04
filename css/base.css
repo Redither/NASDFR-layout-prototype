@@ -1,5 +1,12 @@
 :root {
     font-size: 67.5%;
+    --b-c--white: #FFFFFF;
+    --b-c--Lgrey: #ABABAB;
+    --b-c--bgrd: #FFFDF5;
+    --b-c--Lgreen: #E6F4EF;
+    --b-c--green: #00A085;
+    --b-c--Dgreen: #213C3E;
+    --b-c--Lgreen-stoke: #00A08566;
 }
 
 * {

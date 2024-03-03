@@ -4,210 +4,210 @@ const news_data = [
         "img" : './img/news/news1.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'В России состоялся первый выпуск коммерческих бондов',
         "img" : './img/news/news2.jpg',
         "date" : '22.02.23',
         "category" : 'События',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'Преобретение 30% процентов акций: новые возможности — это всегда и новые обязанности',
         "img" : './img/news/news3.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : "Эмиссия ценных бумаг — прямой путь к новым возможностям",
         "img" : './img/news/news1.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'В России состоялся первый выпуск коммерческих бондов',
         "img" : './img/news/news2.jpg',
         "date" : '22.02.23',
         "category" : 'События',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'Преобретение 30% процентов акций: новые возможности — это всегда и новые обязанности',
         "img" : './img/news/news3.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : "Эмиссия ценных бумаг — прямой путь к новым возможностям",
         "img" : './img/news/news1.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'В России состоялся первый выпуск коммерческих бондов',
         "img" : './img/news/news2.jpg',
         "date" : '22.02.23',
         "category" : 'События',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'Преобретение 30% процентов акций: новые возможности — это всегда и новые обязанности',
         "img" : './img/news/news3.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : "Эмиссия ценных бумаг — прямой путь к новым возможностям",
         "img" : './img/news/news1.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'В России состоялся первый выпуск коммерческих бондов',
         "img" : './img/news/news2.jpg',
         "date" : '22.02.23',
         "category" : 'События',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'Преобретение 30% процентов акций: новые возможности — это всегда и новые обязанности',
         "img" : './img/news/news3.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : "Эмиссия ценных бумаг — прямой путь к новым возможностям",
         "img" : './img/news/news1.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'В России состоялся первый выпуск коммерческих бондов',
         "img" : './img/news/news2.jpg',
         "date" : '22.02.23',
         "category" : 'События',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'Преобретение 30% процентов акций: новые возможности — это всегда и новые обязанности',
         "img" : './img/news/news3.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : "Эмиссия ценных бумаг — прямой путь к новым возможностям",
         "img" : './img/news/news1.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'В России состоялся первый выпуск коммерческих бондов',
         "img" : './img/news/news2.jpg',
         "date" : '22.02.23',
         "category" : 'События',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'Преобретение 30% процентов акций: новые возможности — это всегда и новые обязанности',
         "img" : './img/news/news3.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : "Эмиссия ценных бумаг — прямой путь к новым возможностям",
         "img" : './img/news/news1.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'В России состоялся первый выпуск коммерческих бондов',
         "img" : './img/news/news2.jpg',
         "date" : '22.02.23',
         "category" : 'События',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'Преобретение 30% процентов акций: новые возможности — это всегда и новые обязанности',
         "img" : './img/news/news3.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : "Эмиссия ценных бумаг — прямой путь к новым возможностям",
         "img" : './img/news/news1.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'В России состоялся первый выпуск коммерческих бондов',
         "img" : './img/news/news2.jpg',
         "date" : '22.02.23',
         "category" : 'События',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'Преобретение 30% процентов акций: новые возможности — это всегда и новые обязанности',
         "img" : './img/news/news3.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : "Эмиссия ценных бумаг — прямой путь к новым возможностям",
         "img" : './img/news/news1.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'В России состоялся первый выпуск коммерческих бондов',
         "img" : './img/news/news2.jpg',
         "date" : '22.02.23',
         "category" : 'События',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'Преобретение 30% процентов акций: новые возможности — это всегда и новые обязанности',
         "img" : './img/news/news3.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : "Эмиссия ценных бумаг — прямой путь к новым возможностям",
         "img" : './img/news/news1.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'В России состоялся первый выпуск коммерческих бондов',
         "img" : './img/news/news2.jpg',
         "date" : '22.02.23',
         "category" : 'События',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
     {
         "name" : 'Преобретение 30% процентов акций: новые возможности — это всегда и новые обязанности',
         "img" : './img/news/news3.jpg',
         "date" : '22.02.23',
         "category" : 'Полезное',
-        "link" : ''
+        "link" : './news/new_template.html'
     },
 ]
 

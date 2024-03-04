@@ -1,0 +1,29 @@
+.main_pic {
+    position: relative;
+    max-width: fit-content;
+}
+
+.main_pic::before {
+    content: '';
+    position: absolute;
+    top: 20px; left: 20px;
+    background-image: url(../img/Star\ stoke.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    max-height: 45%;
+    width: 100%;
+}
+
+.main_pic img {
+    max-width: 100%;
+    border-radius: 15px 15px 70px 15px;
+}
+
+
+@media (min-width: 800px) {
+    .main_pic img {
+        max-width: 640px;
+        border-radius: 15px 15px 15px 90px;
+    }
+}

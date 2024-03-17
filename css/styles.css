@@ -20,9 +20,10 @@
     border-radius: 15px 15px 70px 15px;
 }
 
+/* team page styles */
+
 
 /* news page styles */
-
 .news_container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -72,6 +73,7 @@
 }
 
 @media (min-width: 500px) {
+    /* news page styles */
     .news_container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -83,7 +85,7 @@
         border-radius: 15px 15px 15px 90px;
     }
 
-    
+    /* news page styles */
     .news_container {
         grid-template-columns: repeat(3, 1fr);
     }

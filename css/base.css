@@ -245,6 +245,7 @@
     --b-c--Dgreen: #213C3E;
     --b-c--Lgreen-stoke: #00A08566;
     --b-f--ttl: ;
+    --b-f--link: ;
 }
 
 * {
@@ -260,6 +261,19 @@
 a:hover,
 button:hover {
     cursor: pointer;
+}
+
+a:visited {
+    /* color: var(--b-c--white); */
+}
+
+p, h3 {
+    display: block;
+    margin: 0 0 20px 0;
+}
+
+a {
+    font-size: 16px;
 }
 
 body {
@@ -340,6 +354,7 @@ nav ul {
 
 .dgreen-bgrd {
     background-color: var(--b-c--Dgreen);
+    color: var(--b-c--white);
 }
 
 .tab-only {

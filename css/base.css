@@ -468,7 +468,7 @@ footer img {
     footer .container {
         position: relative;
         flex-direction: row;
-        flex-wrap: nowrap;
+        /* flex-wrap: nowrap; */
         gap: 5px;
     }
 

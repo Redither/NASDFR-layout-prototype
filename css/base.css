@@ -292,6 +292,10 @@ body {
     background-color: var(--b-c--bgrd);
 }
 
+main {
+    padding-bottom: 10rem;
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -321,7 +325,6 @@ header {
 footer {
     background-color: var(--b-c--Dgreen);
     padding: 2rem 0;
-    margin-top: 10rem;
 }
 
 footer,

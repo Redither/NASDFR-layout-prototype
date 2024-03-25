@@ -298,7 +298,7 @@
     }
 
     /* contacts page */
-    .contacts {
+    .contacts .container {
         background-image: url('../img/deco/contacts\ stars.svg');
         background-repeat: no-repeat;
         background-position: calc(100% - 4rem) 0;

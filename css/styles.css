@@ -110,6 +110,49 @@
     flex-wrap: wrap;
 }
 
+/* projects page styles  */
+.projects_relink {
+    display: flex;
+    justify-content: space-around;
+    padding: 10rem 0;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project_container {
+    padding: 2rem 0 6rem 0;
+    border-bottom: 1px solid var(--b-c--Lgreen-stoke);
+    color: var(--b-c--Dgreen);
+}
+
+.project_container:first-child {
+    border-top: 1px solid var(--b-c--Lgreen-stoke);
+}
+
+.project_ttl {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.project_desc {
+    display: block;
+    line-height: 140%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.project_review .review_btns {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
 /* news page styles */
 .news_container {
     display: grid;
@@ -208,8 +251,25 @@
 }
 
 @media (min-width: 500px) {
+
     /* form styles */
     .form_fields {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* projects page styles  */
+    .project_container {
+        padding: 2rem 0 6rem 25%;
+        position: relative;
+    }
+
+    .project_logo {
+        position: absolute;
+        left: 0; top: 1rem;
+    }
+
+    .project_review .review_btns {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -251,6 +311,33 @@
     .main_pic img {
         max-width: 640px;
         border-radius: 15px 15px 15px 90px;
+    }
+
+    /* projects page styles  */
+    .project_container {
+        padding: 2rem 0 2rem calc(4rem + 50%);
+        
+    }
+
+    .project_logo {
+        /* position: static; */
+        top: 0;
+    }
+
+    .project_info {
+        max-width: 50%;
+        padding: 1.5rem 2rem 1rem 12%;
+        position: absolute;
+        left: 0; top: 1rem;
+    }
+
+    .project_review .review_btns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projects_relink {
+        background-color: var(--b-c--white);
     }
 
     /* team page styles */
@@ -303,6 +390,7 @@
         background-repeat: no-repeat;
         background-position: calc(100% - 4rem) 0;
     }
+
     .contacts_info {
         display: flex;
         flex-direction: column;

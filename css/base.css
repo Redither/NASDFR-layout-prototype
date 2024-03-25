@@ -476,6 +476,10 @@ footer img {
         background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 1) 50%, rgba(230, 244, 239, 1) 50%);
         background: linear-gradient(270deg, rgba(255, 255, 255, 1) 50%, rgba(230, 244, 239, 1) 50%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#e6f4ef", GradientType=1);
+        padding-bottom: 0;
+    }
+    .lg-bg-grad section {
+        padding: 6rem 0 0 0;
     }
 
     .nav_block, .nav_block ul {

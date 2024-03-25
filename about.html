@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>О компании | НАСДФР</title>
 </head>
 
 <body>
     <h1 class="visually-hidden">О компании</h1>
     <main>
-        <section>
+        <section class="history_main">
             <div class="container">
                 <div>
                     <h2 class="ttl">Достигайте своих целей вместе с НАСДФР</h2>
@@ -26,11 +27,7 @@
                 <div>
                     <img src="./img/about_pic.png" alt="" class="about_pic">
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div>
+                <div class="history_garant">
                     <h2 class="ttl">Мы гарантируем клиентам качество наших услуг</h2>
                     <p class="txt">Портфолио наших клиентов включает самый широкий спектр компаний из самых разных
                         секторов экономики</p>
@@ -58,10 +55,14 @@
                 </ul>
             </div>
         </section>
-        <section>
+        <section class="history_timeline">
             <div class="container">
                 <h2 class="ttl">История компании</h2>
                 <div class="history_slider">
+                    <div class="slider_btns">
+                        <button class="slider_btn"><img src="./img/deco/prev.svg" alt=""></button>
+                        <button class="slider_btn"><img src="./img/deco/next.svg" alt=""></button>
+                    </div>
                     <ul class="history_lent">
                         <li class="history_card">
                             <h3 class="history_year">2013</h3>
@@ -85,7 +86,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="history_add">
+                <div class="dgreen-bgrd history_add">
                     <p class="txt history_txt">
                         У НАСДФР налажено взаимодействие со всеми ключевыми участниками финансового рынка, такими как
                         Центральный банк, Московская биржа и Национальный расчетный депозитарий

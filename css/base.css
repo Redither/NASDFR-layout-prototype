@@ -290,6 +290,8 @@ p, h3 {
 
 body {
     background-color: var(--b-c--bgrd);
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 main {

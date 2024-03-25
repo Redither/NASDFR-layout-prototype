@@ -377,11 +377,22 @@ nav ul {
     display: none;
 }
 
+.btn-green, .btn-brdrd {
+    border: 1px solid var(--b-c--green6);
+    color: var(--b-c--green6);
+    padding: 10px 28px;
+    border-radius: 44px;
+    font-weight: 600;
+    transition: all .3s;
+}
+
 .btn-green {
     background-color: var(--b-c--green6);
     color: var(--b-c--white);
-    padding: 10px 28px;
-    border-radius: 44px;
+}
+.btn-green:hover,  .btn-brdrd:hover {
+    background-color: var(--b-c--green);
+    color: var(--b-c--white);
 }
 
 .nav_block, .nav_block ul {

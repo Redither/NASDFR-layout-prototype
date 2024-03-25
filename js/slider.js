@@ -1,0 +1,71 @@
+window.onload = function() {
+    var slides = 0;
+
+    let touchstartX = 0;    
+    let touchendX = 0;
+
+    const slider = document.querySelector('.history_slider');
+    const all_slides = slider.querySelectorAll('.history_card');
+    const lent = slider.querySelector('.history_lent');
+    const prev_btn = slider.querySelector('.prev');
+    const newx_btn = slider.querySelector('.next');
+
+    const max_slides = all_slides.length - Math.floor(slider.offsetWidth/300);
+
+    function swipe() {
+        if (slides > 0) {
+            lent.style.cssText = 'transform: translateX(calc(-' + slides * 300 + 'px - 2rem))';
+        } else {
+            lent.style.cssText = 'transform: translateX(calc(0px))';
+        }
+    }
+
+    function prev() {
+        console.log('prev');
+        console.log(slides);
+        if (slides > 0 ) {
+            slides--;
+        } else {
+            slides = 0;
+        }
+        swipe();
+    }
+
+    function next() {
+        console.log('next');
+        console.log(slides);
+        console.log(max_slides);
+        if (slides < max_slides) {
+            slides++;
+        } else {
+            slides = max_slides
+        }
+        swipe();
+    }
+
+
+    prev_btn.onclick = function() {prev();}
+    newx_btn.onclick = function() {next();}
+
+
+    function checkDirection() {
+        if (Math.abs(touchendX - touchstartX) > 50) {
+            // console.log('swipe X = ' +  Math.abs(touchendX - touchstartX));
+            if (touchendX < touchstartX) { next() }
+            if (touchendX > touchstartX) { prev() }
+        }
+    }
+
+    slider.addEventListener('touchstart', e => {
+        console.log('touch start');
+        touchstartX = e.changedTouches[0].screenX
+        return
+    })
+
+    slider.addEventListener('touchend', e => {
+        console.log('touch end');
+        touchendX = e.changedTouches[0].screenX;
+        checkDirection();
+        return
+    })
+}

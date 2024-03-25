@@ -243,6 +243,7 @@
 .history_lent {
     display: flex;
     transition: all .3s;
+    z-index: 9;
 }
 
 .history_card {

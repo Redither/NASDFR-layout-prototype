@@ -424,6 +424,10 @@ footer img {
     font-size: 16px;
 }
 
+.copyrigth a {
+    margin-left: 1rem;
+}
+
 .ttl {
     font-size: calc(35px + 0.5rem);
     margin-bottom: 4rem;

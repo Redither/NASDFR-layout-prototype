@@ -70,6 +70,101 @@
     color: var(--b-c--green);
 }
 
+/* advantages page styles */
+.advantages {
+    color: var(--b-c--green6);
+}
+
+.advantages .txt {
+    color: var(--b-c--Dgreen);
+}
+
+.advantages_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    ;
+}
+
+.advantage {
+    position: relative;
+    border: 1px solid var(--b-c--green);
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+    transition: all .3s;
+    height: fit-content;
+}
+
+.advantage_ttl {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.advantage_ttl::after {
+    content: url('../img/deco/Plus.svg');
+    transition: all .3s;
+    height: fit-content;
+    margin: auto 0 auto auto;
+}
+
+.advantage_ttl h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: auto auto auto 0;
+    text-wrap: wrap;
+}
+
+.advantage[open] {
+    /* padding: 2rem 1rem 1rem 1rem; */
+}
+
+.advantage[open] .advantage_ttl {
+    margin-bottom: 3rem;
+}
+
+.advantage[open] .advantage_ttl::after {
+    transform: rotate(45deg);
+}
+
+.advantage_body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    height: 0px;
+    transition: all .5s;
+    max-width: 100%;
+}
+
+.advantage_link {
+    max-width: 100%;
+}
+
+.advantage[open] {
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.advantage[open] .advantage_body {
+    height: auto;
+}
+
+.advantage_body a {
+    display: flex;
+    position: relative;
+    padding: 1rem;
+    background-color: var(--b-c--Lgreen);
+    border-radius: .5rem;
+    text-decoration: none;
+    color: var(--b-c--Dgreen);
+    font-weight: 600;
+    text-wrap: wrap;
+}
+
+.advantage_body a::after {
+    content: url('../img/deco/advantage_link_arrow.svg');
+    margin: auto 0 auto auto;
+}
+
 /* team page styles */
 .team_list {
     display: flex;
@@ -258,6 +353,14 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    /* advantages page styles */
+    .advantages .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 4rem;
+        gap: 4rem;
+    }
+
     /* projects page styles  */
     .project_container {
         padding: 2rem 0 6rem 25%;
@@ -266,7 +369,8 @@
 
     .project_logo {
         position: absolute;
-        left: 0; top: 1rem;
+        left: 0;
+        top: 1rem;
     }
 
     .project_review .review_btns {
@@ -313,10 +417,55 @@
         border-radius: 15px 15px 15px 90px;
     }
 
+    /* advantages page styles */
+    .advantages .row {
+        gap: 18rem;
+    }
+
+    .advantages_container {
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        display: block;
+
+        margin: 1.5em 0;
+        padding: 0;
+        column-gap: 1.5em;
+        /* Общее расстояние между колонками */
+        font-size: .85em;
+        -moz-column-gap: 1.5em;
+        /* Расстояние между колонками для Firefox */
+        -webkit-column-gap: 1.5em;
+        /* Расстояние между колонками  для Safari, Chrome и iOS */
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+
+    .advantage {
+        /* display: block; */
+        /* max-width: 49%; */
+        /* flex: 1 0 50%; */
+        /* white-space: nowrap; */
+
+        display: inline-block;
+        /* background: #fff; */
+        /* padding: 1em; */
+        /* margin: 0 0 1.5em; */
+        width: 100%;
+        margin-bottom: 1.5rem;
+        box-sizing: border-box;
+        /* Изменения алгоритма расчета ширины и высоты элемента.*/
+        -moz-box-sizing: border-box;
+        /* Для Firefox */
+        -webkit-box-sizing: border-box;
+        /* Для Safari, Chrome, iOS иAndroid */
+
+    }
+
     /* projects page styles  */
     .project_container {
         padding: 2rem 0 2rem calc(4rem + 50%);
-        
+
     }
 
     .project_logo {
@@ -328,7 +477,8 @@
         max-width: 50%;
         padding: 1.5rem 2rem 1rem 12%;
         position: absolute;
-        left: 0; top: 1rem;
+        left: 0;
+        top: 1rem;
     }
 
     .project_review .review_btns {

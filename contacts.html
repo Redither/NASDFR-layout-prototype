@@ -10,6 +10,41 @@
 </head>
 
 <body>
+    <header>
+        <div class="container header_container">
+            <a href="/"><img src="./img/Logo.svg" alt="НАСДФР" class="header_logo"></a>
+            <div class="nav_block">
+                <nav>
+                    <ul class="header_links">
+                        <li><a href="./advantages.html">Услуги</a></li>
+                        <li><a href="./about.html">О нас</a></li>
+                        <li><a href="./team.html">Команда</a></li>
+                        <li><a href="./projects.html">Проекты</a></li>
+                        <li><a href="./news.html">Новости</a></li>
+                        <li><a href="./contacts.html">Контакты</a></li>
+                        <!-- <li><a href="./">Реквизиты</a></li> -->
+                    </ul>
+                </nav>
+                <form action="" class="tab-only header_form lead_form">
+                    <h3>Оставьте ваш номер и мы вам перезвоним</h3>
+                    <!-- <div> -->
+                        <label for="">
+                            <span class="visually-hidden">Поле ввода ФИО</span>
+                            <input type="text" placeholder="ФИО">
+                        </label>
+                        <label for="">
+                            <span class="visually-hidden">Поле ввода номера телефона</span>
+                            <input type="tel" placeholder="Номер телефона">
+                        </label>
+                    <!-- </div> -->
+                    <span class="confirm">Оставляя заявку, вы соглашаетесь с <a href="">персональных данных</a></span>
+                    <button type="submit" class="btn-green">Позвоните мне</button>
+                </form>
+                <button class="btn-green not-tab-only">Связаться</button>
+            </div>
+            <button class="tab-only menu_bar"><span></span></button>
+        </div>
+    </header>
     <main class="dgreen-bgrd">
         <section class="contacts">
             <div class="container">
@@ -88,5 +123,5 @@
         </div>
     </footer>
 </body>
-
+<script src="./js/main.js"></script>
 </html>

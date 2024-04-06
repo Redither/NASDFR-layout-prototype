@@ -21,8 +21,6 @@ window.onload = function() {
     }
 
     function prev() {
-        console.log('prev');
-        console.log(slides);
         if (slides > 0 ) {
             slides--;
         } else {
@@ -32,9 +30,6 @@ window.onload = function() {
     }
 
     function next() {
-        console.log('next');
-        console.log(slides);
-        console.log(max_slides);
         if (slides < max_slides) {
             slides++;
         } else {

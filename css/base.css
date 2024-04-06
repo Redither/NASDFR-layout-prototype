@@ -623,7 +623,7 @@ footer img {
 @media (min-width: 800px) {
     .header_container {
         flex-direction: row;
-        gap: 5%;
+        gap: 10%;
         /* justify-content: space-between; */
     }
 
@@ -634,7 +634,8 @@ footer img {
     }
 
     .nav_block {
-        gap: 5%;
+        gap: 10%;
+        display: flex;
         /* justify-content: flex-end; */
         /* justify-content: space-between; */
     }

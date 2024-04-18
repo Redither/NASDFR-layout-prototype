@@ -52,13 +52,13 @@ window.onload = function() {
     }
 
     slider.addEventListener('touchstart', e => {
-        console.log('touch start');
+        // console.log('touch start');
         touchstartX = e.changedTouches[0].screenX
         return
     })
 
     slider.addEventListener('touchend', e => {
-        console.log('touch end');
+        // console.log('touch end');
         touchendX = e.changedTouches[0].screenX;
         checkDirection();
         return

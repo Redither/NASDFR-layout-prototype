@@ -364,14 +364,14 @@
 .history_slider {
     position: relative;
     max-width: 100%;
-    /* overflow-x: hidden; */
-    padding: 0 0 4rem 0;
+    overflow-x: hidden;
+    padding: 4rem 0 4rem 0;
 }
 
 .slider_btns {
     display: none;
     position: absolute;
-    top: -3rem;
+    top: 0;
     right: 0;
     z-index: 10;
 }

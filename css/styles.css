@@ -19,6 +19,10 @@
     max-width: fit-content;
 }
 
+.tasks .ttl {
+    line-height: 100%;
+}
+
 .main_pic {
     position: relative;
     max-width: fit-content;
@@ -170,6 +174,7 @@
 
 .index_projects .projects_slider {
     position: relative;
+    overflow-x: hidden;
 }
 
 .projects_slider .slider_btns {
@@ -459,13 +464,13 @@
     color: var(--b-c--Dgreen);
 }
 
-.founder_txt:last-child {
+/* .founder_txt:last-child {
     margin-bottom: 6rem;
     padding-bottom: 10rem;
     background-image: url('../img/deco/autograph.png');
     background-repeat: no-repeat;
     background-position: left bottom;
-}
+} */
 
 .founder_txt:first-of-type {
     margin-top: 4rem;
@@ -938,6 +943,7 @@
     }
 
     .history_main .container>div:first-child {
+        padding-top: 15%;
         padding-right: 4rem;
     }
 

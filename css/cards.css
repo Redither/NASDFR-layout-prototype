@@ -20,6 +20,7 @@
 
 .slider_wrapper {
     max-width: 100%;
+    overflow-y: auto;
 }
 
 .slider_lent {
@@ -115,18 +116,24 @@
 
     .tasks .container {
         display: grid;
-        grid-template-columns: 1fr 4fr;
+        grid-template-columns: 2fr 5fr;
          
     }
 
     .tasks .container .col {
         /* width: initial; */
         min-height: 100%;
-        display: block;
+        display: flex;
         margin-right: 40px;
+        justify-content: flex-start;
+        gap: 2rem;
     }
 
-    .tasks .container .slider_wrapper {
-        max-width: 28.5%;
+    .tasks .col p {
+        max-width: 80%;
+    }
+
+    .tasks .col .btn-green {
+        max-width: fit-content;
     }
 }

@@ -536,9 +536,10 @@ footer img {
 }
 
 .ttl {
-    font-size: calc(20px + 2vw);
+    /* font-size: calc(20px + 2vw); */
     margin-bottom: 2rem;
     font-weight: 600;
+    color: var(--b-c--green6);
 }
 
 .popup_wrapper {

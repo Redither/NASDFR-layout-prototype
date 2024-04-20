@@ -308,6 +308,12 @@ main {
     padding: 0 1rem;
 }
 
+.row,
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     padding: 2rem 0;
     background-color: var(--b-c--bgrd);
@@ -342,7 +348,6 @@ header {
     margin: auto;
 }
 
-/* .header_links li:not(:last-child)  */
 .header_links li {
     border-bottom: 1px solid var(--b-c--Dgreen);
     padding: 1rem;
@@ -602,6 +607,46 @@ footer img {
     margin: 2rem 0;
 }
 
+.breadcrumps_container {
+    margin: 1rem auto auto 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.breadcrumps_container * {
+    font-size: 12px;
+}
+
+.breadcrumps_container a {
+    color: var(--b-c--Dgreen);
+    text-wrap: nowrap;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrump {
+    display: flex;
+}
+
+.breadcrump:not(:last-child) a {
+    color: #000000;
+}
+.breadcrump:last-child a {
+    color: var(--b-c--green6);
+}
+
+.breadcrump:not(:last-child)::after {
+    display: block;
+    content: ' ';
+    background-image: url('data:image/svg+xml,<svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.375L8 7.5L1 13.625" stroke="%2300A085" stroke-linecap="round"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    width: 1rem;
+    margin: auto 0 auto 1rem;
+}
+
 @media (min-width: 500px) {
 
     .container {
@@ -619,9 +664,23 @@ footer img {
         margin-top: 40px;
     }
 
+    .breadcrumps_container * {
+        font-size: 14px;
+    }
+
 }
 
 @media (min-width: 800px) {
+
+    .breadcrumps_container * {
+        font-size: 16px;
+    }
+
+    .row {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
     .header_container {
         flex-direction: row;
         gap: 10%;

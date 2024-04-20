@@ -710,9 +710,10 @@
     /* advantages page styles */
     .advantages .row {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        max-width: 80%;
         margin-bottom: 4rem;
-        gap: 4rem;
+        gap: 0;
     }
 
     /* projects page styles  */
@@ -953,7 +954,7 @@
 
     /* advantages page styles */
     .advantages .row {
-        gap: 18rem;
+        /* gap: 18rem; */
     }
 
     .advantages_container {

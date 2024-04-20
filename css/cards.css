@@ -5,6 +5,16 @@
     padding-bottom: 5rem;
 }
 
+.tasks .slide_list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.slide_list li {
+    list-style:circle;
+}
+
 .tasks .btn-green {
     position: absolute;
     bottom: -1rem;

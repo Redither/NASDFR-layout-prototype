@@ -541,7 +541,7 @@ footer img {
 }
 
 .ttl {
-    /* font-size: calc(20px + 2vw); */
+    font-size: 42px;
     margin-bottom: 2rem;
     font-weight: 600;
     color: var(--b-c--green6);

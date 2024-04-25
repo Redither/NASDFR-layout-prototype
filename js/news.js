@@ -226,12 +226,20 @@ function create_posts(container) {
 
 window.onload = function() {
     const container = document.querySelector('.news_container');
-    if (window.innerWidth < 500) {
-        num_of_posts = 6;
-    } else if (window.innerWidth < 800) {
-        num_of_posts = 8;
+    if (container.getAttribute('data-place') == 'index') {
+        if (window.innerWidth < 800) {
+            num_of_posts = 2;
+        } else {
+            num_of_posts = 3;
+        }
     } else {
-        num_of_posts = 12;
+        if (window.innerWidth < 500) {
+            num_of_posts = 6;
+        } else if (window.innerWidth < 800) {
+            num_of_posts = 8;
+        } else {
+            num_of_posts = 12;
+        }
     }
     create_posts(container);
 }

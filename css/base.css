@@ -547,6 +547,10 @@ footer img {
     color: var(--b-c--green6);
 }
 
+.dgreen-bgrd .ttl {
+    color: var(--b-c--white);
+}
+
 .popup_wrapper {
     position: fixed;
     display: none;

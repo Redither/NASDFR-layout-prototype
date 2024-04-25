@@ -4,8 +4,6 @@
 }
 
 .review_txt {
-    /* max-height: 60px;
-    min-height: 60px; */
     -webkit-line-clamp: 2; /* Число отображаемых строк */
     display: -webkit-box; /* Включаем флексбоксы */
     -webkit-box-orient: vertical; /* Вертикальная ориентация */
@@ -18,7 +16,7 @@
 }
 
 .hero h1 {
-    font-size: calc(14px + 2vw);
+    font-size: calc(20px + 1vw);
     font-weight: 600;
     color: var(--b-c--green6);
 }

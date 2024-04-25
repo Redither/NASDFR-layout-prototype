@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <!-- Yandex.Metrika counter --> 
     <script type="text/javascript" > 
         (function(m,e,t,r,i,k,a){
@@ -27,7 +29,7 @@
 <body>
     <header>
         <div class="container header_container">
-            <a href="/"><img src="./img/Logo.svg" alt="НАСДФР" class="header_logo"></a>
+            <a href="/"><img src="../img/Logo.svg" alt="НАСДФР" class="header_logo"></a>
             <div class="nav_block">
                 <nav>
                     <ul class="header_links">
@@ -63,14 +65,20 @@
     <main>
         <section>
             <div class="container">
-                <div class="row">
-                    <a href="../news.html" class="news_back">Все новости</a>
-                    <span class="news_date">22.02.23</span>
-                    <span class="news_tag">События</span>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <a href="../news.html" class="news_back">Все новости</a>
+                                <span class="news_date">22.02.23</span>
+                                <span class="news_tag">События</span>
+                            </div>
+                            <h1 class="ttl">России состоялся первый выпуск коммерческих бондов</h1>
+                            <a href="">Источник: <span class="txt">газета «ВЕДОМОСТИ»</span></a>
+                        </div>
+                    <div class="col">
+                        <img src="../img/news/news1.jpg" alt="" class="news_img">
+                    </div>
                 </div>
-                <img src="../img/news/news1.jpg" alt="" class="news_img">
-                <h1 class="ttl">России состоялся первый выпуск коммерческих бондов</h1>
-                <a href="">Источник: <span class="txt">газета «ВЕДОМОСТИ»</span></a>
                 <p class="txt">
                     Первый в России выпуск коммерческих облигаций (см. врез) разместила в пятницу небольшая финансовая
                     компания «Фэирдип инвестментс ру». Выпуск зарегистрирован Национальным расчетным депозитарием (НРД)
@@ -130,7 +138,7 @@
             </div>
         </section>
         <section class="dgreen-bgrd">
-            <div class="container">
+            <div class="news_container" data-place="new">
 
             </div>
         </section>
@@ -184,5 +192,6 @@
     </footer>
 
 </body>
-<script src="./js/main.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/news.js"></script>
 </html>

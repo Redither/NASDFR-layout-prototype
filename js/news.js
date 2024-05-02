@@ -216,9 +216,9 @@ var posts = '';
 
 function create_posts(container) {
     for (let i = 0; i < num_of_posts; i++) {
-        console.log(news_data[i]);
+        // console.log(news_data[i]);
         post = '<li class="news_item"><img class="news_pic" src="'+ news_data[i].img +'"><div><span class"news_date">'+ news_data[i].date +'</span><span class="news_tag">'+ news_data[i].category +'</span></div><h3 class="news_name">'+ news_data[i].name +'</h3><a class="news_link" href="'+ news_data[i].link +'">Читать</a></li>' ;
-        console.log(post);
+        // console.log(post);
         posts += post;
     }
     container.innerHTML = posts;
@@ -226,9 +226,9 @@ function create_posts(container) {
 
 function create_posts_sub(container) {
     for (let i = 0; i < num_of_posts; i++) {
-        console.log(news_data[i]);
+        // console.log(news_data[i]);
         post = '<li class="news_item"><img class="news_pic" src=".'+ news_data[i].img +'"><div><span class"news_date">'+ news_data[i].date +'</span><span class="news_tag">'+ news_data[i].category +'</span></div><h3 class="news_name">'+ news_data[i].name +'</h3><a class="news_link" href="'+ news_data[i].link +'">Читать</a></li>' ;
-        console.log(post);
+        // console.log(post);
         posts += post;
     }
     container.innerHTML = posts;

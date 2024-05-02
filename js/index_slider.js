@@ -1,26 +1,26 @@
 function checkDirection(fun1, fun2) {
-    if (Math.abs(touchendX - touchstartX) > 150) {
+    if (Math.abs(touchendX - touchstartX) > 200) {
         // console.log('swipe X = ' +  Math.abs(touchendX - touchstartX));
-        if (touchendX < touchstartX) { fun1 }
-        if (touchendX > touchstartX) { fun2 }
+        if (touchendX < touchstartX) { fun1() }
+        if (touchendX > touchstartX) { fun2() }
     }
 }
 
 
 
-window.onload = function() {
-    function init_slider_projects() {
+// window.onload = function() {
+    // function init_slider_projects() {
         let touchstartX = 0;    
         let touchendX = 0;
-        let cur_slide = 0
+        let cur_slide = 0;
 
-        const slider = document.querySelector('.projects_slider')
-        const lent = slider.querySelector('.projects_list')
+        const slider = document.querySelector('.projects_slider');
+        const lent = slider.querySelector('.projects_list');
         const prev_btn = slider.querySelector('.prev');
-        const newx_btn = slider.querySelector('.next');
+        const next_btn = slider.querySelector('.next');
 
-        const length = lent.querySelector('.project_item').offsetWidth
-        const max_cur_slide = lent.querySelectorAll('.project_item').length -1
+        const length = lent.querySelector('.project_item').offsetWidth;
+        const max_cur_slide = lent.querySelectorAll('.project_item').length - 1;
 
         function swipe() {
             if (cur_slide > 0) {
@@ -31,8 +31,6 @@ window.onload = function() {
         }
 
         function prev() {
-            // console.log('prev')
-            // console.log(cur_slide)
             if (cur_slide > 0 ) {
                 cur_slide--;
             } else {
@@ -42,8 +40,6 @@ window.onload = function() {
         }
 
         function next() {
-            // console.log('next')
-            // console.log(cur_slide)
             if (cur_slide < max_cur_slide) {
                 cur_slide++;
             } else {
@@ -61,13 +57,22 @@ window.onload = function() {
         slider.addEventListener('touchend', e => {
             // console.log('touch end');
             touchendX = e.changedTouches[0].screenX;
-            checkDirection(next(), prev());
+            checkDirection(next, prev);
             return
         })
 
-        prev_btn.onclick = function() {prev();}
-        newx_btn.onclick = function() {next();}
-    }
+        // console.log(prev_btn)
+        // console.log(next_btn)
+        prev_btn.onclick = function(e) {
+            e.stopPropagation()
+            prev();
+        }
 
-    init_slider_projects()
-}
+        next_btn.onclick = function(e) {
+            e.stopPropagation()
+            next();
+        }
+    // }
+
+    // init_slider_projects()
+// }

@@ -121,13 +121,17 @@
 
 @media (min-width: 800px) {
     .tasks .btn-green {
-        position: static;
+        /* position: static; */
     }
 
     .tasks .container {
-        display: grid;
+        /* display: grid; */
         grid-template-columns: 2fr 5fr;
          
+    }
+
+    .tasks .col .ttl {
+        font-size: 38px;
     }
 
     .tasks .container .col {

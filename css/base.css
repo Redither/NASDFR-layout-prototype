@@ -555,7 +555,7 @@ footer img {
     position: fixed;
     display: none;
     z-index: 110;
-    background-color: #FFFFFF99;
+    background-color: #00000099;
     top: 0;
     left: 0;
     right: 0;
@@ -573,7 +573,7 @@ footer img {
     gap: 1rem;
     flex-direction: column;
     padding: 3rem 2rem;
-    background-color: #FFF;
+    background-color: var(--b-c--bgrd);
     max-width: 500px;
     width: 100%;
 }

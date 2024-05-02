@@ -734,10 +734,12 @@
 .team_slider .team_person .person_img {
     width: 100%;
     height: 332px;
+    max-width: 100%;
 }
 
 .team_slider .team_person .person_name {
     margin: 0px 0px auto 0px;
+    max-width: 100%;
 }
 
 @media (min-width: 500px) {

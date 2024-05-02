@@ -14,7 +14,7 @@ window.onload = function() {
 
     function swipe() {
         if (slides > 0) {
-            lent.style.cssText = 'transform: translateX(calc(-' + slides * 300 + 'px - 2rem))';
+            lent.style.cssText = 'transform: translateX(calc(-' + slides * 340 + 'px))';
         } else {
             lent.style.cssText = 'transform: translateX(calc(0px))';
         }

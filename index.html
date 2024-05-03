@@ -281,7 +281,7 @@
         <section class="index_feedback">
             <div class="container">
                 <h2 class="ttl visually-hidden">Заказать консультацию профессионалов</h2>
-                <form  onsubmit="submitForm()" class="lead_form index_form">
+                <form  id="form" action="/feedback/processing.php" enctype="multipart/form-data" novalidate class="lead_form index_form">
                     <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
                     <div class="form_fields">
                         <label for="">
@@ -405,5 +405,5 @@
 <script src="./js/index_slider.js"></script>
 <script src="./js/popup.js"></script>
 <script src="./js/news.js"></script>
-
+<script src="/feedback/js/form-processing.js"></script>
 </html>

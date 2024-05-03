@@ -23,7 +23,7 @@ define('LOG_FILE', 'logs/' . date('Y-m-d') . '.log');
 // писать предупреждения и ошибки в лог
 const HAS_WRITE_LOG = true;
 // проверять ли капчу
-const HAS_CHECK_CAPTCHA = true;
+const HAS_CHECK_CAPTCHA = false;
 // обязательно ли наличие файлов, прикреплённых к форме
 const HAS_ATTACH_REQUIRED = false;
 // разрешённые mime типы файлов
@@ -38,7 +38,7 @@ const HAS_SEND_EMAIL = true;
 // добавить ли прикреплённые файлы в тело письма в виде ссылок
 const HAS_ATTACH_IN_BODY = true;
 const EMAIL_SETTINGS = [
-  'addresses' => ['manager@domain.com'], // кому необходимо отправить письмо
+  'addresses' => ['slavonchik68@yandex.ru'], // кому необходимо отправить письмо
   'from' => ['no-reply@domain.com', 'Имя сайта'], // от какого email и имени необходимо отправить письмо
   'subject' => 'Сообщение с формы обратной связи', // тема письма
   'host' => 'ssl://smtp.yandex.ru', // SMTP-хост

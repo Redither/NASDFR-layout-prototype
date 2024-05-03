@@ -8,25 +8,27 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/cards.css">
-    <!-- Yandex.Metrika counter --> 
-    <script type="text/javascript" > 
-        (function(m,e,t,r,i,k,a){
-            m[i]=m[i]||function(){
-                (m[i].a=m[i].a||[]).push(arguments)}; 
-                m[i].l=1*new Date(); 
-                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} 
-                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-        }) 
-            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); 
-        
-            ym(39435805, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); 
-    </script> 
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(39435805, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true }); 
+    </script>
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/39435805" style="position:absolute; left:-9999px;" alt="" /></div>
-    </noscript> 
+    </noscript>
     <!-- /Yandex.Metrika counter -->
     <title>НАСДФР</title>
-    <meta name="description" content="Национальное агентство по содействию в допуске на финансовый рынок. Надежный аутсорсинг финансовых услуг">
+    <meta name="description"
+        content="Национальное агентство по содействию в допуске на финансовый рынок. Надежный аутсорсинг финансовых услуг">
 </head>
 
 <body>
@@ -57,7 +59,8 @@
                         <input type="tel" placeholder="Номер телефона">
                     </label>
                     <!-- </div> -->
-                    <span class="confirm">Оставляя заявку, вы соглашаетесь с политикой обработки <a href="">персональных данных</a></span>
+                    <span class="confirm">Оставляя заявку, вы соглашаетесь с политикой обработки <a href="">персональных
+                            данных</a></span>
                     <button type="submit" class="btn-green">Позвоните мне</button>
                 </form>
                 <button class="btn-green not-tab-only popup_btn-open">Связаться</button>
@@ -71,7 +74,8 @@
                 <h1>Национальное агентство по содействию в допуске на финансовый рынок</h1>
                 <div class="main_pic"><img src="./img/main_pic.png" alt=""></div>
                 <h2 class="ttl">Ваш надежный аутсорсинг финансовых услуг</h2>
-                <p><span>Более 17 лет</span> мы предлагаем нашим клиентами уникальный для российского рынка набор услуг, включающий в
+                <p><span>Более 17 лет</span> мы предлагаем нашим клиентами уникальный для российского рынка набор услуг,
+                    включающий в
                     себя полное сопровождение операций на финансовом рынке</p>
                 <button class="btn-green popup_btn-open">Позвоните мне</button>
             </div>
@@ -84,7 +88,7 @@
                     <a href="./advantages.html" class="btn-green">Все услуги</a>
                 </div>
                 <div class="slider_wrapper">
-                    <ul class="slider_lent"> 
+                    <ul class="slider_lent">
                         <li class="slider_slide">
                             <h3 class="slide_ttl">Ценные бумаги</h3>
                             <ul class="slide_list">
@@ -222,7 +226,8 @@
                                 </div>
                                 <div>
                                     <p class="project_txt review_txt">
-                                        Акционерное общество «Научно-производственное предприятие «Квант» высоко оценивает
+                                        Акционерное общество «Научно-производственное предприятие «Квант» высоко
+                                        оценивает
                                         проделанную работу «НАСДФР» по вопросам,
                                         связанным с государственной регистрацией дополнительного выпуска ценных бумаг АО
                                         «НПП «Квант».</p>
@@ -238,7 +243,8 @@
                                 <div>
                                     <p class="project_txt review_txt">
                                         Мы оказали профессиональную помощь в
-                                        организации дополнительного выпуска ценных бумаг «Зираат Банк (Москва)» (акционерное
+                                        организации дополнительного выпуска ценных бумаг «Зираат Банк (Москва)»
+                                        (акционерное
                                         общество)</p>
                                     <a href="./projects.html" class="project_link">Читать полностью</a>
                                 </div>
@@ -275,7 +281,7 @@
         <section class="index_feedback">
             <div class="container">
                 <h2 class="ttl visually-hidden">Заказать консультацию профессионалов</h2>
-                <form action="" class="lead_form index_form">
+                <form  onsubmit="submitForm()" class="lead_form index_form">
                     <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
                     <div class="form_fields">
                         <label for="">
@@ -295,18 +301,21 @@
                             <select name="" id="">
                                 <option value="">В чем мы можем вам помочь?</option>
                                 <option value="Ценные бумаги">Ценные бумаги</option>
-                                <option value="Управление бизнес-процессами компании">Управление бизнес-процессами компании</option>
+                                <option value="Управление бизнес-процессами компании">Управление бизнес-процессами
+                                    компании</option>
                                 <option value="Стратегическое планирование">Стратегическое планирование</option>
                                 <option value="GR-поддержка">GR-поддержка</option>
                                 <option value="Инвестиционное консультирование">Инвестиционное консультирование</option>
                                 <option value="Получение рейтинга компанией">Получение рейтинга компанией</option>
                                 <option value="Допуск на фондовый рынок">Допуск на фондовый рынок</option>
-                                <option value="Бюджетирование и бухгалтерское, налоговое консультирование">Бюджетирование и бухгалтерское, налоговое консультирование</option>
+                                <option value="Бюджетирование и бухгалтерское, налоговое консультирование">
+                                    Бюджетирование и бухгалтерское, налоговое консультирование</option>
                             </select>
                         </label>
                     </div>
                     <div class="form_confirm">
-                        <span class="confirm_txt">Оставляя заявку, вы соглашаетесь с <a href="./privacy_politics.html">персональных
+                        <span class="confirm_txt">Оставляя заявку, вы соглашаетесь с <a
+                                href="./privacy_politics.html">персональных
                                 данных</a></span>
                         <button type="submit" class="btn-green">Отправить</button>
                     </div>
@@ -315,7 +324,6 @@
             </div>
         </section>
     </main>
-
     <div class="popup_wrapper">
         <div class="popup">
             <button class="popup_btn-close">X</button>
@@ -340,7 +348,8 @@
                         </label>
                     </div>
                     <div class="form_confirm">
-                        <span class="confirm_txt">Оставляя заявку, вы соглашаетесь с политикой обработки <a href="./privacy_politics.html">персональных
+                        <span class="confirm_txt">Оставляя заявку, вы соглашаетесь с политикой обработки <a
+                                href="./privacy_politics.html">персональных
                                 данных</a></span>
                         <button type="submit" class="btn-green">Позвоните мне</button>
                     </div>
@@ -358,11 +367,40 @@
                 <li><a href="https://www.nsd.ru/">Национальный расчетный депозитарий</a></li>
                 <li><a href="http://www.centr-invest.ru/">АО РК “Центр-Инвест”</a></li>
             </ul>
-            <a href="https://podari-zhizn.ru/ru/give-help/stat-donorom"><img src="./img/jizn.svg" alt="Благотворительный фонд Подари Жизнь" class="footer_bf"></a>
+            <a href="https://podari-zhizn.ru/ru/give-help/stat-donorom"><img src="./img/jizn.svg"
+                    alt="Благотворительный фонд Подари Жизнь" class="footer_bf"></a>
             <span class="copyrigth">Copyright © 2024 <a href="https://nasdfr.ru">nasdfr.ru</a></span>
         </div>
     </footer>
 </body>
+<script>
+    function submitForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        var data = {
+            name: name,
+            email: email,
+            message: message
+        };
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "send_email.php", true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send(JSON.stringify(data));
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    alert("Сообщение успешно отправлено!");
+                } else {
+                    alert("Произошла ошибка при отправке сообщения.");
+                }
+            }
+        };
+    }
+</script>
 <script src="./js/main.js"></script>
 <script src="./js/index_slider.js"></script>
 <script src="./js/popup.js"></script>

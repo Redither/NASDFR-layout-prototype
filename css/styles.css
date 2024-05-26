@@ -431,6 +431,8 @@
     background-repeat: no-repeat;
     background-position: calc(100% - 1rem) calc(100% - 4rem);
     background-size: 160px;
+    max-height: fit-content;
+    height: fit-content;
 }
 
 .history_txt {

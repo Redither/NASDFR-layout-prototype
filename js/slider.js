@@ -1,4 +1,4 @@
-window.onload = function() {
+function initSLiderHist() {
     var slides = 0;
 
     let touchstartX = 0;    
@@ -64,3 +64,5 @@ window.onload = function() {
         return
     })
 }
+
+initSLiderHist()

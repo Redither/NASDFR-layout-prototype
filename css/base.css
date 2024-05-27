@@ -663,6 +663,18 @@ footer img {
     margin: auto 0 auto 1rem;
 }
 
+.is-valid {}
+.is-invalid {
+    position: relative;
+    border: 1px solid #DC143C!important;
+}
+.is-invalid::after {
+    color: #DC143C;
+    content: 'ошибка';
+    position: absolute;
+    top: -20px;
+}
+
 @media (min-width: 500px) {
 
     .container {

@@ -14,3 +14,4 @@ open_btns.forEach(element => {
     element.onclick = function() {popup.classList.add('--active')}
 })
 close_popup.onclick = function() {popup.classList.remove('--active')}
+popup.onclick = function() {popup.classList.remove('--active')}

@@ -258,6 +258,31 @@
     font-family: 'Raleway', sans-serif;
 }
 
+form {
+    position: relative;
+}
+
+form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: var(--b-c--bgrd);
+    background-image: url("../img/Spinner.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    visibility: hidden;
+} 
+
+form._sending::before {
+    opacity: .5;
+    visibility: visible;
+}
+
 a:hover,
 button:hover {
     cursor: pointer;

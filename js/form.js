@@ -41,20 +41,49 @@ telFields.forEach(field => {
 function checkValidity(form) {
     const email = form.querySelector('input[type="email"]');
     const phone = form.querySelector('input[type="tel"]');
-    if (regEmail.test(email.value) && regTel.test(phone.value)) {
-        console.log('valid');
-        return true;
+    if (email) {
+        if (regEmail.test(email.value) && regTel.test(phone.value)) {
+            console.log('valid');
+            return true;
+        } else {
+            console.log('not valid');
+            email.classList.add('is-invalid');
+            phone.classList.add('is-invalid');
+            return false;
+        }
     } else {
-        console.log('not valid');
-        email.classList.add('is-invalid');
-        phone.classList.add('is-invalid');
-        return false;
+        if (regTel.test(phone.value)) {
+            console.log('valid');
+            return true;
+        } else {
+            console.log('not valid');
+            phone.classList.add('is-invalid');
+            return false;
+        }
+    }
+}
+
+async function sendForm(form) {
+    form.classList.add('_sending');
+    let formData = new FormData(form);
+    console.log(formData);
+    let response = await fetch('sendmail.php', {
+        method: 'POST',
+        body: formData
+    });
+    if (response.ok) {
+        let result = await response.json();
+        alert(result.message);
+        form.reset();
+        form.classList.remove('_sending');
+    } else {
+
     }
 }
 
 forms.forEach(form => {
     form.addEventListener('submit', function(e) {
-        e.preventDefault()
+        e.preventDefault();
         console.log('validating form...')
         if (checkValidity(form)) {
             console.log('form is valid')

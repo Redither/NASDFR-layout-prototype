@@ -6,7 +6,7 @@ const telFields = document.querySelectorAll('input[type="tel"]');
 const forms = document.querySelectorAll('form');
 
 emailFields.forEach(field => {
-    field.addEventListener('input', function() {
+    field.addEventListener('input', function () {
         if (regEmail.test(field.value)) {
             field.classList.add('is-valid')
             // field.closest().classList.add('is-valid')
@@ -23,7 +23,7 @@ emailFields.forEach(field => {
 
 
 telFields.forEach(field => {
-    field.addEventListener('input', function() {
+    field.addEventListener('input', function () {
         if (regTel.test(field.value)) {
             field.classList.add('is-valid')
             // field.closest().classList.add('is-valid')
@@ -82,14 +82,22 @@ async function sendForm(form) {
 }
 
 forms.forEach(form => {
-    form.addEventListener('submit', function(e) {
+    form.onsubmit = function (e) {
         e.preventDefault();
-        console.log('validating form...')
-        if (checkValidity(form)) {
-            console.log('form is valid')
-            form.submit()
+        e.stopPropagation();
+        if (5 == 5) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('validating form...');
+            if (checkValidity(form)) {
+                console.log('form is valid');
+                sendForm(form);
+            } else {
+                return
+            }
         } else {
-            return
+            form.submit();
         }
-    })
+    }
+    return false;
 })

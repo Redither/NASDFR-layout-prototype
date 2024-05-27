@@ -7,7 +7,7 @@
     require 'phpmailer/src/SMTP.php';
     
     //Load Composer's autoloader
-    require 'vendor/autoload.php';
+    // require 'vendor/autoload.php';
 
     $mail = new PHPMailer(true);
 

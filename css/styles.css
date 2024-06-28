@@ -321,6 +321,21 @@
     margin: auto 0 auto auto;
 }
 
+.advantage.--solo .advantage_body a::after {
+    content: '';
+}
+
+.advantage.--solo .advantage_ttl::after {
+    content: url('../img/deco/advantage_link_arrow.svg');
+}
+
+
+
+.advantage.--solo, .advantage.--solo .advantage_link {
+    color: var(--b-c--green6);
+    text-decoration: none;
+}
+
 /* about page styles */
 .history_main .container {
     display: grid;

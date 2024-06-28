@@ -67,22 +67,24 @@ async function sendForm(form) {
     form.classList.add('_sending');
     let formData = new FormData(form);
     console.log(formData);
-    let response = await fetch('sendmail.php', {
+    let response = await fetch('send_mail.php', {
         method: 'POST',
         body: formData
     });
     if (response.ok) {
-        let result = await response.json();
-        alert(result.message);
-        form.reset();
-        form.classList.remove('_sending');
+        response.then(
+            result = await response.json()
+        )
+        alert(result.message)
+        form.reset()
+        form.classList.remove('_sending')
     } else {
-
+        alert("Ошибка HTTP: " + response.status);
     }
 }
 
 forms.forEach(form => {
-    form.onsubmit = function (e) {
+    form.onsubmit = function(e) {
         e.preventDefault();
         e.stopPropagation();
         if (5 == 5) {

@@ -759,6 +759,11 @@
     max-width: 100%;
 }
 
+.advantages_section li {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
 @media (min-width: 500px) {
     .review_txt {
         -webkit-line-clamp: 3;

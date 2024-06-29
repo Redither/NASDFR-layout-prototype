@@ -9,13 +9,13 @@ $phone = $_POST['phone'];
 $email = $_POST['email'];
 // $message = $_POST['message'];
 $theme = $_POST['advantage'];
-$mail->SMTPDebug = 3;                                 // Enable verbose debug output
+// $mail->SMTPDebug = 3;                                   // Enable verbose debug output
 
 $mail->isSMTP();                                        // Set mailer to use SMTP
 $mail->Host = 'smtp.yandex.ru';  					    // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                                 // Enable SMTP authentication
-$mail->Username = 'noreply@nasdfr.ru';                     // Ваш логин от почты с которой будут отправляться письма
-// $mail->Password = '$#2%Ea73@LcF?R-.';                   // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'noreply@nasdfr.ru';                  // Ваш логин от почты с которой будут отправляться письма
+// $mail->Password = '$#2%Ea73@LcF?R-.';                // Ваш пароль от почты с которой будут отправляться письма
 $mail->Password = 'pzdwkelslbzpgmye';                   // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                              // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
@@ -39,10 +39,12 @@ if(!$mail->send()):
     // echo 
     $response = 'Mailer Error: ' . $mail->ErrorInfo;
 else: 
+    // http_response_code(200);
+    // header("HTTP/1.1 200 OK");
     $response = 'Success';
 endif;
 
-header('Content-type: application.json');
+// header('Content-type: application.json');
 echo json_encode($response);
 ?>
 

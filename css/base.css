@@ -271,7 +271,6 @@ form::before {
     bottom: 0;
     z-index: 1;
     background-color: var(--b-c--bgrd);
-    background-image: url("../img/Spinner.gif");
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0;
@@ -279,6 +278,19 @@ form::before {
 } 
 
 form._sending::before {
+    background-image: url("../img/Spinner.gif");
+    opacity: .5;
+    visibility: visible;
+}
+
+form._success::before {
+    background-image: url("../img/success.png");
+    opacity: .5;
+    visibility: visible;
+}
+
+form._error::before {
+    background-image: url("../img/error.png");
     opacity: .5;
     visibility: visible;
 }

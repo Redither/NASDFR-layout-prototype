@@ -72,14 +72,20 @@ async function sendForm(form) {
         body: formData
     });
     if (response.ok) {
-        response.then(
-            result = await response.json()
-        )
-        alert(result.message)
+        // response.then(
+        //     (result) => {console.log(result)}
+        // )
+        // alert(result.message)
         form.reset()
         form.classList.remove('_sending')
+        form.classList.add('_success')
+        console.log('added')
+        setTimeout(form.classList.remove('_success'), 5000)
+        console.log('remove')
     } else {
-        alert("Ошибка HTTP: " + response.status);
+        form.classList.add('_error')
+        setTimeout(form.classList.remove('_error'), 5000)
+        // alert("Ошибка HTTP: " + response.status); 
     }
 }
 
@@ -90,9 +96,9 @@ forms.forEach(form => {
         if (5 == 5) {
             e.preventDefault();
             e.stopPropagation();
-            console.log('validating form...');
+            // console.log('validating form...');
             if (checkValidity(form)) {
-                console.log('form is valid');
+                // console.log('form is valid');
                 sendForm(form);
             } else {
                 return

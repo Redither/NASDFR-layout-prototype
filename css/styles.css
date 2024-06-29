@@ -802,6 +802,23 @@
     }
 
     /* advantages page styles */
+    .advantages .container {
+        position: relative;
+    }
+    .advantages .container::before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: -40px;
+        right: 1rem;
+        /* margin-left: 52%; */
+        width: 40%;
+        height: 180px;
+        background-image: url('/img/deco/advantages_deco.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right top;
+    }
     .advantages .row {
         display: grid;
         grid-template-columns: 1fr;
@@ -865,7 +882,17 @@
     }
 }
 
+@media (min-width: 500px) {
+    
+    .advantages .container::before {
+        right: 2rem;
+    }
+}
+
 @media (min-width: 800px) {
+    .advantages .container::before {
+        right: 4rem;
+    }
     .hero .ttl {
         font-size: 24px;
     }

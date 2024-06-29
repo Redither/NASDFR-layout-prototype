@@ -25,7 +25,8 @@
     color: var(--b-c--green6);
 }
 
-.hero .ttl, .ttl-3 {
+.hero .ttl,
+.ttl-3 {
     font-size: calc(12px + 2vw);
     color: var(--b-c--green);
     margin-bottom: 1rem;
@@ -331,7 +332,8 @@
 
 
 
-.advantage.--solo, .advantage.--solo .advantage_link {
+.advantage.--solo,
+.advantage.--solo .advantage_link {
     color: var(--b-c--green6);
     text-decoration: none;
 }
@@ -742,6 +744,7 @@
     font-weight: 500;
     margin: auto 0 0 0;
 }
+
 .team_lent .team_person h2,
 .team_lent .team_person span {
     display: block;
@@ -769,6 +772,15 @@
 }
 
 @media (min-width: 500px) {
+
+
+    .history_add>div {
+        display: flex;
+        /* flex-direction: column; */
+        gap: 2rem;
+        margin: 4rem 0 0 0;
+    }
+
     .review_txt {
         -webkit-line-clamp: 3;
         /* Число отображаемых строк */
@@ -809,6 +821,7 @@
     .advantages .container {
         position: relative;
     }
+
     .advantages .container::before {
         content: ' ';
         display: block;
@@ -823,6 +836,7 @@
         background-size: contain;
         background-position: right top;
     }
+
     .advantages .row {
         display: grid;
         grid-template-columns: 1fr;
@@ -887,7 +901,7 @@
 }
 
 @media (min-width: 500px) {
-    
+
     .advantages .container::before {
         right: 2rem;
     }
@@ -897,7 +911,9 @@
     .advantages .container::before {
         right: 4rem;
     }
-    .hero .ttl, .ttl-3 {
+
+    .hero .ttl,
+    .ttl-3 {
         font-size: 24px;
     }
 

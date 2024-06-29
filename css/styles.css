@@ -25,7 +25,7 @@
     color: var(--b-c--green6);
 }
 
-.hero .ttl {
+.hero .ttl, .ttl-3 {
     font-size: calc(12px + 2vw);
     color: var(--b-c--green);
     margin-bottom: 1rem;
@@ -764,6 +764,10 @@
     margin-left: 2rem;
 }
 
+.advantages_section img {
+    border-radius: 15px 15px 15px 10rem;
+}
+
 @media (min-width: 500px) {
     .review_txt {
         -webkit-line-clamp: 3;
@@ -893,7 +897,7 @@
     .advantages .container::before {
         right: 4rem;
     }
-    .hero .ttl {
+    .hero .ttl, .ttl-3 {
         font-size: 24px;
     }
 
